@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link   rel='stylesheet' type="text/css" href="assets/css/bootstrap.css">
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/controllers/userctrl.js"></script>
+    <script src="app/services/userServices.js"></script>
+    <script src="app/controllers/mainCtrl.js"></script>
+    <script src="app/services/authServices.js"></script>
+    <script src="app/controllers/uploadCtrl.js"></script>
+    <script src="app/services/UploadServices.js"></script>
+
+
+
+    <title>MET portofolio portal</title>
+
+  </head>
+
+  <body ng-app="userApp" ng-controller="mainCtrl as main">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Geeks' market</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container theme-showcase" role="main">
+    <div ng-view></div>
+  </div>
+      <hr>
+
+      <footer>
+        <p>&copy; 2017 Bavly's, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+  </body>
+</html>

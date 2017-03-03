@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <title>MET portofolio portal</title>
+
+  </head>
+
+  <body >
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Geeks' market</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container theme-showcase" role="main">
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Welcome to the Geeks' market</h1>
+    <p>Along with the many reasons why you should hire a GUCian, let me tell you the top few: <br>
+    1- As cold as stone; after 5 years in the GUC we are simply qualified to walk through hell<br>
+    2- Accurate guesser; we passed a lot of exams that we had no idea about <br>
+    3- No distraction; we don't have a life</p>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse">
+    <form class="navbar-form navbar-right" method="post" action="/">
+      <div class="form-group">
+        <input type="text" name="username" placeholder="Username" class="form-control" ng-model="main.loginData.username">
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Password" class="form-control" ng-model="main.loginData.password">
+      </div>
+      <button type="submit" class="btn btn-success">login</button>
+      <br>
+      <% if(flag){%> <div class= "alert alert-danger"> wrong username or password</div> <% } %>
+
+
+
+    </form>
+  </div><!--/.navbar-collapse -->
+</div>
+
+</div>
+<% if(login){%> <div class= "alert alert-success">Your account has been created, log in!</div> <% } %>
+<div class="container">
+
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-4">
+      <h2>MET Student?</h2>
+      <p>In our field, grades are just numbers; practical experience is all what counts. That's why we created this portal for you, as a show room for your work and achievments</p>
+      <br>
+      <p><a class="btn btn-default" href="/studentsignup" role="button">Sign up &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Employer?</h2>
+      <p>We know how important it is for you see the actual work quality of your potiential employee. We have created this portal for you, as show room to look for the most appropriate employee that matches your expectations</p>
+      <p><a class="btn btn-default" href="/Views" role="button">View portfolios&raquo;</a></p>
+   </div>
+
+  </div>
+</div>
+<hr>
+
+<footer>
+  <p>&copy; 2017 Bavly's, Inc.</p>
+</footer>
+</div> <!-- /container -->
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+</body>
+</html>
